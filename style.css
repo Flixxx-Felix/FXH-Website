@@ -251,6 +251,34 @@
         color: #2BA84A;
     }
 
+    #login-page {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #login-page .login-page-content {
+        width: 100%;
+        height: 97%;
+        padding: 3% 3% 3% 3%;
+        resize: none;
+        overflow: auto;
+    }
+
+    #login-page .login-page-content::-webkit-scrollbar {
+        visibility: hidden;
+    }
+
+    #login-page .login-page-content h1 {
+        text-align: center;
+    }
+
+    #login-page .login-page-content a {
+        color: #2BA84A;
+    }
+
     .navigation {
         display: flex;
         justify-content: center;
@@ -591,7 +619,7 @@
         margin: 3% 0% 0% 4%;
     }
 
-    /*#privacy-page {
+    #login-page {
         flex-direction: column;
         position: absolute;
         width: 100%;
@@ -599,30 +627,30 @@
         padding-top: 5%;
     }
 
-    #privacy-page .privacy-page-content {
+    #login-page .login-page-content {
         width: 100%;
         height: 97%;
         padding: 5% 5% 5% 5%;
         resize: none;
-        overflow: auto;
+        overflow: scroll;
     }
 
-    .privacy-page-content::-webkit-scrollbar {
-        
+    .login-page-content::-webkit-scrollbar {
+
     }
 
-    .privacy-page-content h1 {
+    .login-page-content h1 {
         text-align: center;
         margin: 5% auto;
     }
 
-    .privacy-page-content h3 {
+    .login-page-content h3 {
         margin: 3% 0% 0% 4%;
     }
 
-    .privacy-page-content p {
+    .login-page-content p {
         margin: 3% 0% 0% 4%;
-    }*/
+    }
 
 /*
     .contactform-page .button {
@@ -677,7 +705,7 @@
     .navigation .nav-button i {
         font-size: 20px;
         margin: 0 auto;
-        padding: 5% 0% 0% 0%;
+        padding: 10% 0% 0% 0%;
         cursor: pointer;
     }
 
@@ -731,9 +759,5 @@
         top: -45%;
         background-color: #2BA84A;
         transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-    }
-
-    .tooltip {
-        display: none;
     }
 }
